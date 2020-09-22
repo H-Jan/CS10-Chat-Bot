@@ -38,9 +38,9 @@ def get_bot_response(user_response):
 
     if user_response == "chevy":
         return choice(bot_response_chevy)
-    elif user_input == "ford":
+    elif user_response == "ford":
         return choice(bot_response_ford)
-    elif user_inpit == "dodge":
+    elif user_response == "dodge":
         return choice(bot_response_dodge)
     else:
         return "Ehhhhh I dont count that as American Muscle"
@@ -51,4 +51,3 @@ user_response = ""
 while True:
     user_response = input("What is your favorite American Muscle Car manufacturer?: ")
 
-    
