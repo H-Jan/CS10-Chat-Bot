@@ -44,3 +44,6 @@ def get_bot_response(user_response):
         return choice(bot_response_dodge)
     else:
         return "Ehhhhh I dont count that as American Muscle"
+
+print("Welcome! Please enter your favorite American Muscle Car manufacturer")
+
