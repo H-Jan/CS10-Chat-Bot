@@ -34,3 +34,13 @@ def get_bot_response(user_response):
     bot_response_chevy = ["with an LS V8? Awesome!", "Camaro's and Corvettes, what a duo", "Huzzah! A Person of Quality!"]
     bot_response_ford = ["Watch out for those crowds!", "The original pony car", "Nothin is better than a '68 Eleanor"]
     bot_response_dodge = ["The All American Muscle Car", "707 hp Hellcat Engine? Yes please!", "No replacement for displacement"]
+
+
+    if user_response == "chevy":
+        return choice(bot_response_chevy)
+    elif user_input == "ford":
+        return choice(bot_response_ford)
+    elif user_inpit == "dodge":
+        return choice(bot_response_dodge)
+    else:
+        return "Ehhhhh I dont count that as American Muscle"
