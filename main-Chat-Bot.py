@@ -34,7 +34,10 @@ def get_bot_response(user_response):
     bot_response_chevy = ["with an LS V8? Awesome!", "Camaro's and Corvettes, what a duo", "Huzzah! A Person of Quality!"]
     bot_response_ford = ["Watch out for those crowds!", "The original pony car", "Nothin is better than a '68 Eleanor"]
     bot_response_dodge = ["The All American Muscle Car", "707 hp Hellcat Engine? Yes please!", "No replacement for displacement"]
+    bot_response_cadillac = ["Sure, I dont judge", "Thats more luxury than muscle", "Old School Cool"]
+    bot_response_ferrari = ["Noooooo!", "Thats no muscle car!", "That was built for corners, not quarter miles"]
 
+    user_response = user_response.lower()
 
     if user_response == "chevy":
         return choice(bot_response_chevy)
@@ -42,6 +45,10 @@ def get_bot_response(user_response):
         return choice(bot_response_ford)
     elif user_response == "dodge":
         return choice(bot_response_dodge)
+    elif user_response == "cadillac":
+        return choice(bot_response_cadillac)
+    elif user_response == "ferrari":
+        return choice(bot_response_ferrari)
     else:
         return "Ehhhhh I dont count that as American Muscle"
 
