@@ -47,3 +47,8 @@ def get_bot_response(user_response):
 
 print("Welcome! Please enter your favorite American Muscle Car manufacturer")
 
+user_response = ""
+while True:
+    user_response = input("What is your favorite American Muscle Car manufacturer?: ")
+
+    
